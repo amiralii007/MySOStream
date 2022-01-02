@@ -22,8 +22,8 @@ class MicroCluster:
     def insert(self, sample_id):
         self.data_points.append(sample_id)
 
-    def merge_data_points(self, l1, l2):
-        self.data_points = l1 + l2
+    def merge_data_points(self, first, second):
+        self.data_points = first + second
 
     def calculate_fade(self, current_time, decay_rate):
         t = current_time - self.creation_time
